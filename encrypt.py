@@ -8,10 +8,10 @@ e=7
 
 # eğer imza eklemek isterseniz, aşağıdaki satırlarıda aktif hale getirebilirsiniz.
 # imza = "100100001011"
-# imzali_mesaj = mesaj + imza.zfill(24)
+# mesaj = mesaj + imza.zfill(24)
 
 #mesaj bloğunu 2 bytelık parçalara bölüyorum
-bloklar = [imzali_mesaj[i:i+16] for i in range(0, len(imzali_mesaj), 16)] 
+bloklar = [mesaj[i:i+16] for i in range(0, len(mesaj), 16)] 
 print(bloklar)
 sifreli_bloklar = ""
 bin_bloklar = ""
